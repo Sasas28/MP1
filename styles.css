@@ -1,6 +1,6 @@
 :root {
     --primary-color: #F5AC1F;
-    --bg-primary-color: #fef6e7;
+    --bg-primary-color: #fee7e7;
     --font-size: 16px;
 }
 
@@ -100,4 +100,30 @@ header {
 
 .link-btn:hover {
     color: var(--primary-color);
+}
+
+.product-name,
+.product-price {
+    font-family: 'MohrRounded','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.product-price {
+    color: #ED6C65;
+    font-size: large;
+}
+
+.qty-container {
+    background-color: rgb(243, 234, 234);
+    display: inline-block;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.qty-btn {
+    background-color: #ccc;
+    width: 35px;
+    height: 35px;
+    padding: .25rem;
+    border-radius: 50%;
+    text-align: center;
 }

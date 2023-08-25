@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'MohrRounded','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
 button {
     border: none;
 }
@@ -126,4 +130,45 @@ header {
     padding: .25rem;
     border-radius: 50%;
     text-align: center;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding-top: 2rem;
+    color: white;
+}
+
+.footer_ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_ul a,
+.footer_icon {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_icon:hover {
+    color: white;
+}
+
+.footer_img {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+}
+
+.footer_subscribe-btn {
+    color: white;
+    padding: 0 2rem;
+    height: 45px;
+    background-color: #cfa157;
+    border-color: #cfa157;
+    border-radius: 8px;
+}
+
+.copyright-container {
+    background-color: #cfa157;
 }

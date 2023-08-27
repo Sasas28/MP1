@@ -204,12 +204,9 @@ button {
 }
 
 /* OFFCANVAS SECTION */
+ 
 .offcanvas-body {
     flex-grow: 0;
-}
-
-.offcanvas-top {
-    height: 20vh;
 }
 
 .search_input {

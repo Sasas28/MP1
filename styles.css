@@ -110,6 +110,10 @@ button {
     background-color: var(--primary-color);
 }
 
+.carousel-indicators [data-bs-target] {
+    border-bottom: 0;
+}
+
 /* PRODUCT SECTION */
 .link-btn {
     border: 2px solid var(--primary-color);

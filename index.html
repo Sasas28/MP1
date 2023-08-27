@@ -32,7 +32,7 @@
             <button class="header_order-button">
               <i class="bi bi-handbag me-md-2 position-relative">
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  0
+                  3
                 </span>
               </i>
               <span class="d-none d-md-block">Order</span>
@@ -47,9 +47,14 @@
     </header>
     <!-- HERO SECTION -->
     <section class="container">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="3000">
             <div class="slide-container">
               <div class="slide-text-container--first">
                 <h2>Freshness</h2>
@@ -59,7 +64,7 @@
               <img src="images/slide-1.png" class="d-block w-100" alt="...">
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="3000">
             <div class="slide-container">
               <div class="slide-text-container--second">
                 <h2>Texture and <br class="d-block d-md-none"/> Taste</h2>
@@ -69,7 +74,7 @@
               <img src="images/slide-2.png" class="d-block w-100" alt="...">
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="3000">
             <div class="slide-container">
               <div class="slide-text-container--third">
                 <h2>Variety and Specialty</h2>
@@ -333,11 +338,59 @@
     <!-- OFFCANVAS FOR ORDER SECTION -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Your Order</h5>
+        <div class="d-flex align-items-center">
+          <h5 class="m-0" id="offcanvasRightLabel">Your Order</h5>
+          <span class="badge ms-5 fw-bold fs-6 counter">3</span>
+        </div>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        ...
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+              <img src="images/cobs-bread.jpg" alt="" width="80px">
+            </div>
+            <div class="qty-container--order-section">
+              <button class="qty-btn fw-bold">-</button>
+              <span class="fw-bold">1</span>
+              <button class="qty-btn fw-bold">+</button>
+            </div>
+            <div>
+              <span>&#8369; 679</span>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+              <img src="images/loaf-bread.jpg" alt="" width="80px">
+            </div>
+            <div class="qty-container--order-section">
+              <button class="qty-btn fw-bold">-</button>
+              <span class="fw-bold">1</span>
+              <button class="qty-btn fw-bold">+</button>
+            </div>
+            <div>
+              <span>&#8369; 576</span>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+              <img src="images/wheat-bread.jpg" alt="" width="80px">
+            </div>
+            <div class="qty-container--order-section">
+              <button class="qty-btn fw-bold">-</button>
+              <span class="fw-bold">1</span>
+              <button class="qty-btn fw-bold">+</button>
+            </div>
+            <div>
+              <span>&#8369; 241</span>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="fw-bold">TOTAL</div>
+            <span class="order_total fw-bold">&#8369; 1,496</span>
+          </li>
+        </ul>
+        <button type="submit" class="text-white fw-bold px-3 rounded w-100 mt-5 py-2">Checkout</button>
       </div>
     </div>
 

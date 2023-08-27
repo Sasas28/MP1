@@ -175,6 +175,11 @@ button {
     background-color: #FFFFFF;
 }
 
+.footer_input-field:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .footer_subscribe-btn {
     color: white;
     padding: 0 2rem;
@@ -188,10 +193,48 @@ button {
     background-color: #cfa157;
 }
 
+/* OFFCANVAS SECTION */
 .offcanvas-body {
     flex-grow: 0;
 }
 
 .offcanvas-top {
     height: 20vh;
+}
+
+.search_input {
+    border: 1px solid #495057;
+    border-radius: 8px;
+    display: block;
+    height: 45px;
+    width: 60%;
+    margin: 0 auto;
+    padding: .8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #FFFFFF;
+}
+
+.search_input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* SIGNUP PAGE STYLING */
+.card-header {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+.card-body input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--primary-color);
 }

@@ -14,9 +14,11 @@
     <header class="header px-2 mb-2">
       <nav class="container">
         <div class="row align-items-center justify-content-center py-2 py-lg-1">
-          <div class="col-1 col-md-2 col-lg-2 order-md-2 p-0 pe-md-3 pe-lg-1 d-flex justify-content-center justify-content-md-end sign-up-link">
-            <i class="bi bi-person-circle me-md-2"></i>
-            <span class="d-none d-md-block">Sign up</span>
+          <div class="col-1 col-md-2 col-lg-2 order-md-2 p-0 d-flex justify-content-center justify-content-lg-end">
+            <a class="header_sign-up-button" href="pages/signup.html">
+              <i class="bi bi-person-circle me-md-2"></i>
+              <span class="d-none d-md-block">Sign up</span>
+            </a>
           </div>
           <div class="col-10 col-md-4 col-lg-3 order-md-first p-0 d-flex justify-content-center">
             <a class="text-decoration-none" href="#home">
@@ -26,16 +28,18 @@
               </h1>
             </a>
           </div>
-          <div class="col-1 col-md-1 col-lg-1 order-md-last p-0 d-flex justify-content-center order-link">
-            <i class="bi bi-handbag me-md-2 position-relative">
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                0
-              </span>
-            </i>
-            <span class="d-none d-md-block">Order</span>
+          <div class="col-1 col-md-1 col-lg-1 order-md-last p-0 d-flex justify-content-center justify-content-md-end justify-content-lg-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <button class="header_order-button">
+              <i class="bi bi-handbag me-md-2 position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  0
+                </span>
+              </i>
+              <span class="d-none d-md-block">Order</span>
+            </button>
           </div>
-          <div class="col col-md-5 col-lg-6 ps-md-2 ps-lg-1 search-bar">
-            <input class="w-100" type="text" placeholder="What are you looking for?">
+          <div class="col col-md-5 col-lg-6 ps-md-2 ps-lg-1 header_search-container">
+            <input class="header_search-input w-100" type="text" placeholder="What are you looking for?" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
             <i class="bi bi-search fw-bold"></i>
           </div>
         </div>
@@ -118,14 +122,14 @@
           <div class="card">
             <img src="images/cobs-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Cobs bread</h5>
+              <h5 class="fw-bold">Cobs bread</h5>
               <p class="product-price fw-bold">&#8369; 679</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -133,14 +137,14 @@
           <div class="card">
             <img src="images/loaf-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Loaf bread</h5>
+              <h5 class="fw-bold">Loaf bread</h5>
               <p class="product-price fw-bold">&#8369; 576</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -148,14 +152,14 @@
           <div class="card">
             <img src="images/rough-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Cobs small</h5>
+              <h5 class="fw-bold">Cobs small</h5>
               <p class="product-price fw-bold">&#8369; 325</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -163,14 +167,14 @@
           <div class="card">
             <img src="images/wheat-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Wheat bread</h5>
+              <h5 class="fw-bold">Wheat bread</h5>
               <p class="product-price fw-bold">&#8369; 241</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -187,14 +191,14 @@
           <div class="card">
             <img src="images/slice-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Slice bread</h5>
+              <h5 class="fw-bold">Slice bread</h5>
               <p class="product-price fw-bold">&#8369; 254</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -202,14 +206,14 @@
           <div class="card">
             <img src="images/pinoy-tasty.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Pinoy Tasty</h5>
+              <h5 class="fw-bold">Pinoy Tasty</h5>
               <p class="product-price fw-bold">&#8369; 352</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -217,14 +221,14 @@
           <div class="card">
             <img src="images/toast-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Toast Bread</h5>
+              <h5 class="fw-bold">Toast Bread</h5>
               <p class="product-price fw-bold">&#8369; 325</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -232,14 +236,14 @@
           <div class="card">
             <img src="images/tasty-bread.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="product-name fw-bold">Tasty Bread</h5>
+              <h5 class="fw-bold">Tasty Bread</h5>
               <p class="product-price fw-bold">&#8369; 155</p>
               <div class="col qty-container mb-2">
                 <button class="qty-btn fw-bold">-</button>
                 <span class="fw-bold">1</span>
                 <button class="qty-btn fw-bold">+</button>
               </div>
-              <button class="col btn-bgcolor text-white fw-bold btn-sm px-3">Grab</button>
+              <button class="col text-white fw-bold btn-sm px-3">Grab</button>
             </div>
           </div>
         </div>
@@ -285,11 +289,11 @@
             </ul>
           </div>
           <div class="col-12 col-lg-3 my-2">
-            <p>
+            <p class="mb-0 mb-lg-1">
               <strong>Don't miss out the latest products and discounts!</strong>
             </p>
             <form>
-              <input class="pe-0" type="text" placeholder="Enter your email address">
+              <input class="footer_input-field pe-0" type="text" placeholder="Enter your email address">
               <button class="footer_subscribe-btn mt-2">Subscribe</button>
             </form>
             <p class="mt-1">
@@ -310,11 +314,32 @@
       <div class="copyright-container position-relative">
         <p class="text-center py-1">Copyright &#169; Bakery. All right reserved.</p>
         <a class="position-absolute bottom-0 end-0 p-5 pe-4" href="#">
-          <i class="bi bi-arrow-up-circle h1 text-white"></i>
+          <i class="bi bi-arrow-up-circle h1 text-danger"></i>
         </a>
       </div>
-      
     </footer>
+
+    <!-- OFFCANVAS FOR SEARCHING -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-body">
+        <h5 class="text-center w-100" id="offcanvasTopLabel">What are you looking for?</h5>
+        <button type="button" class="btn-close text-reset position-absolute top-0 end-0 m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="container">
+          <input class="border w-100" type="text" placeholder="type here">
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS FOR ORDER SECTION -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Your Order</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+    </div>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

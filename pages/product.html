@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <link rel="icon" href="../images/baker-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- HEADER AND NAVIGATION SECTION -->
+    <header class="header px-2 mb-2">
+        <nav class="container">
+          <div class="row align-items-center justify-content-center py-2 py-lg-1">
+            <div class="col-1 col-md-2 col-lg-2 order-md-2 p-0 d-flex justify-content-center justify-content-lg-end">
+              <a class="header_sign-up-button" href="signup.html">
+                <i class="bi bi-person-circle me-md-2"></i>
+                <span class="d-none d-md-block">Sign up</span>
+              </a>
+            </div>
+            <div class="col-10 col-md-4 col-lg-3 order-md-first p-0 d-flex justify-content-center">
+              <a class="text-decoration-none" href="../index.html">
+                <h1 class="text-white">
+                  <img src="../images/baker-logo.png" alt="logo" width="60px">
+                  Bakery
+                </h1>
+              </a>
+            </div>
+            <div class="col-1 col-md-1 col-lg-1 order-md-last p-0 d-flex justify-content-center justify-content-md-end justify-content-lg-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <button class="header_order-button">
+                <i class="bi bi-handbag me-md-2 position-relative">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    3
+                  </span>
+                </i>
+                <span class="d-none d-md-block">Order</span>
+              </button>
+            </div>
+            <div class="col col-md-5 col-lg-6 ps-md-2 ps-lg-1 header_search-container">
+              <input class="header_search-input w-100" type="text" placeholder="What are you looking for?" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+              <i class="bi bi-search fw-bold"></i>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container">
+       <div class="display-1 text-center">Menu</div>
+        <hr class="hr"> 
+    </div>
+    
+    <!-- PRODUCT SECTION -->
+    <section class="container py-5">
+        <div class="d-flex justify-content-between align-items-center pb-3">
+          <h3 class="fw-bold">Classics</h3>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="../images/cobs-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Cobs bread</h5>
+                <p class="product-price fw-bold">&#8369; 679</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../images/loaf-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Loaf bread</h5>
+                <p class="product-price fw-bold">&#8369; 576</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../images/rough-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Cobs small</h5>
+                <p class="product-price fw-bold">&#8369; 325</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../images/wheat-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Wheat bread</h5>
+                <p class="product-price fw-bold">&#8369; 241</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="d-flex justify-content-between align-items-center pb-3">
+          <h3 class="fw-bold">Tasty</h3>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="../images/slice-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Slice bread</h5>
+                <p class="product-price fw-bold">&#8369; 254</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../images/pinoy-tasty.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Pinoy Tasty</h5>
+                <p class="product-price fw-bold">&#8369; 352</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../images/toast-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Toast Bread</h5>
+                <p class="product-price fw-bold">&#8369; 325</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="../images/tasty-bread.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="fw-bold">Tasty Bread</h5>
+                <p class="product-price fw-bold">&#8369; 155</p>
+                <div class="col qty-container mb-2">
+                  <button class="qty-btn fw-bold">-</button>
+                  <span class="fw-bold">1</span>
+                  <button class="qty-btn fw-bold">+</button>
+                </div>
+                <button class="col text-white fw-bold btn-sm px-3 grab-effect">Grab</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 my-2">
+              <h4 class="fw-bold">About Bakery</h4>
+              <ul class="footer_ul">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Store Location</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 my-2">
+              <h4 class="fw-bold">Help and Information</h4>
+              <ul class="footer_ul">
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 my-2">
+              <h4 class="fw-bold">Payment Option</h4>
+              <ul class="footer_ul">
+                <li>
+                  <img class="footer_img
+                  " src="images/visa.png" alt="">
+                  <img class="footer_img
+                  " src="images/master-card.png" alt="">
+                  <img class="footer_img
+                  " src="images/gcash.png" alt="">
+                  <img class="footer_img
+                  " src="images/grabpay.png" alt="">
+                </li>
+                <li>
+                  Cash on Delivery
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-3 my-2">
+              <p class="mb-0 mb-lg-1">
+                <strong>Don't miss out the latest products and discounts!</strong>
+              </p>
+              <form>
+                <input class="footer_input-field pe-0" type="text" placeholder="Enter your email address">
+                <button class="footer_subscribe-btn mt-2">Subscribe</button>
+              </form>
+              <p class="mt-1">
+                <strong>Follow us on: </strong>
+                <a class="footer_icon me-1" href="">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a class="footer_icon me-1" href="">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a class="footer_icon" href="">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-container position-relative">
+          <p class="text-center py-1">Copyright &#169; Bakery. All right reserved.</p>
+          <a class="position-absolute bottom-0 end-0 p-5 pe-4" href="#">
+            <i class="bi bi-arrow-up-circle h1 text-danger"></i>
+          </a>
+        </div>
+    </footer>
+
+    <!-- OFFCANVAS FOR SEARCHING -->
+    <div class="offcanvas offcanvas-top d-flex justify-content-center" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-body">
+          <h5 class="text-center w-100" id="offcanvasTopLabel">What are you looking for?</h5>
+          <button type="button" class="btn-close text-reset position-absolute top-0 end-0 m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="container">
+            <input class="search_input" type="text" placeholder="Search your favorite">
+          </div>
+        </div>
+    </div>
+  
+    <!-- OFFCANVAS FOR ORDER SECTION -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="d-flex align-items-center">
+            <h5 class="m-0" id="offcanvasRightLabel">Your Order</h5>
+            <span class="badge ms-5 fw-bold fs-6 counter">3</span>
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                <img src="../images/cobs-bread.jpg" alt="" width="80px">
+                </div>
+                <div class="qty-container--order-section">
+                <button class="qty-btn fw-bold">-</button>
+                <span class="fw-bold">1</span>
+                <button class="qty-btn fw-bold">+</button>
+                </div>
+                <div>
+                <span>&#8369; 679</span>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                <img src="../images/loaf-bread.jpg" alt="" width="80px">
+                </div>
+                <div class="qty-container--order-section">
+                <button class="qty-btn fw-bold">-</button>
+                <span class="fw-bold">1</span>
+                <button class="qty-btn fw-bold">+</button>
+                </div>
+                <div>
+                <span>&#8369; 576</span>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                <img src="../images/wheat-bread.jpg" alt="" width="80px">
+                </div>
+                <div class="qty-container--order-section">
+                <button class="qty-btn fw-bold">-</button>
+                <span class="fw-bold">1</span>
+                <button class="qty-btn fw-bold">+</button>
+                </div>
+                <div>
+                <span>&#8369; 241</span>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="fw-bold">TOTAL</div>
+                <span class="order_total fw-bold">&#8369; 1,496</span>
+            </li>
+            </ul>
+            <button type="submit" class="text-white fw-bold px-3 rounded w-100 mt-5 py-2">Checkout</button>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

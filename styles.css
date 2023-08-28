@@ -32,6 +32,15 @@ button {
     background-color: var(--primary-color);
 }
 
+hr {
+    background-color: #F5AC1F;
+    opacity: 1;
+}
+
+hr:not([size]) {
+    height: 2px;
+}
+
 /* HEADER SECTION */
 .header {
     background-color: var(--primary-color);
@@ -82,6 +91,11 @@ button {
     position: relative;
 }
 
+.slide-container:hover button {
+    transform: scale(1.1); /* Increase the image size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
 .slide-text-container--first {
     max-width: 300px;
     position: absolute;
@@ -114,6 +128,12 @@ button {
     border-bottom: 0;
 }
 
+/* CATEGORY EFFECTS */
+.col-3.position-relative:hover img {
+    transform: scale(1.1); /* Increase the image size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
 /* PRODUCT SECTION */
 .link-btn {
     border: 2px solid var(--primary-color);
@@ -122,6 +142,11 @@ button {
 
 .link-btn:hover {
     color: var(--primary-color);
+}
+
+.card:hover .grab-effect {
+    transform: scale(1.1); /* Increase the image size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
 .product-price {
